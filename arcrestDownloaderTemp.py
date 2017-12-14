@@ -7,8 +7,6 @@ from arcrest.agol import FeatureService
 from arcrest.common.filters import LayerDefinitionFilter
 import datetime
 import os
-import tkinter
-from Tkinter import *
 
 def download_features(fs_url, date, out_path):
     '''downloads a hosted service features into a feature class'''
