@@ -2,7 +2,11 @@
 ArcRestDownloader.py README
 ============================
 
-The ArcRestDownloader.py will download feature data from a feature service URL. This feature service URL has to be changed to the desired feature you are wanting to get the data from. 
+The ArcRestDownloader.py will download feature data from a feature service URL into a new Geo database. This feature service URL has to be changed to the desired feature you are wanting to get the data from. 
+
+**READ THE IMPLEMENTATION COMMENTS**
+
+NOTE: The ArcRestDownloader creates a new empty Geo Database to put the features in however this can be disregarded very easily in the program by commenting out the geo database code and changing the output path to anywhere of your choosing.
 
 To get the feature service url:
 - log into arcgis.com
