@@ -9,6 +9,13 @@ import datetime
 import os
 
 def download_features(fs_url, date, out_path):
+    
+    #creates a empty GDB
+    arcpy.workspace = cwd 
+    out_folder_path = cwd + '/Shapefiles'
+    out_name = "test.gdb"
+    arcpy.CreateFileGDB_management(out_folder_path, out_name)
+    
     '''downloads a hosted service features into a feature class'''
     agol_securityHandler = AGOLTokenSecurityHandler('Username','Password','http://company.maps.arcgis.com/')
     agol_org_obj = Administration(securityHandler=agol_securityHandler,initialize=True)
@@ -51,7 +58,7 @@ open('LastDate.txt', 'w').writelines(lines)
 f.close()
 
 #CHANGE THE VALUE IN QUOTATIONS TO CHANGE OUTPUT FILES NAME
-out_path = folder + '/shapes'
+out_path = folder + 'test.gdb/shapes'
 
 #This is the feature service URL CHANGE THIS TO THE DESIRED FEATURE SERVICE URL
 fs_url = r'https://services.arcgis.com/FeatureServer'
