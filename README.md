@@ -16,4 +16,4 @@ To get the feature service url:
 To choose what date to dowload feature clas data from :
 - open the "LastDate.txt" file
 - change the date in the file to desired date
-NOTE: Make sure date is in exact format as required and also DO NOT change anything else in the file
+NOTE: Make sure date is in exact format as required (mm/dd/yyyy) and also DO NOT change anything else in the file
