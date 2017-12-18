@@ -2,9 +2,7 @@
 ArcRestDownloader.py README
 ============================
 
-The ArcRestDownloader.py will download feature data from a feature service URL into a new Geo database. This feature service URL has to be changed to the desired feature you are wanting to get the data from. 
-
-**READ THE IMPLEMENTATION COMMENTS**
+The ArcRestDownloader.py will download feature data from a feature service URL into a new Geo database. 
 
 NOTE: The ArcRestDownloader creates a new empty Geo Database to put the features in however this can be disregarded very easily in the program by commenting out the geo database code and changing the output path to anywhere of your choosing.
 
@@ -20,4 +18,7 @@ To get the feature service url:
 To choose what date to dowload feature clas data from :
 - open the "LastDate.txt" file
 - change the date in the file to desired date
+
 NOTE: Make sure date is in exact format as required (mm/dd/yyyy) and also DO NOT change anything else in the file
+
+**READ THE IMPLEMENTATION COMMENTS**
